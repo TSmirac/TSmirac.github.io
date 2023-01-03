@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-size: cover;
+    background-image: url(res/posterler-luks-restoran-desen-arka-plan.jpg.jpg);
+}
+
+#kutu{
+   
+    background: rgba(0, 0, 0, 0.3);
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+  
+}
+#logo{
+  
+    width: 20%;
+    float: left;
+    height: 100px;
+}
+#menu{
+  
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+#menu li{
+    list-style-type: none;
+}
+#menu a{
+    text-decoration: none;
+    text-align: none;
+    color: white;
+}
+#menu a:hover{
+    color: brown;
+}
+#birinci{
+    
+    width:100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    color: white;
+}
+#ikinci{
+   
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#ucuncu{
+    font-family:'Rubik Bubbles',cursive;
+    list-style-type:none;
+    color: white;
+    text-align: center;
+  
+}
+#dorduncu{
+  
+    height: 300px;
+justify-content: space-around;
+align-items: center;
+
+}
+#sosyalmedya{
+ 
+flex-direction: column;
+color: white;
+align-items: center;
+display: flex;
+justify-content: space-around;
+text-align: left;
+}
+.adres{
+  
+    color: white;
+    float: left;
+
+}
+.map{ 
+  
+    float: right;
+
+}
+
+
+#sosyalmedya a{
+    text-decoration: none;
+    text-align: none;
+    color: white;
+}
+#sosyalmedya a:hover{
+  
+    color: brown;
+ }
+ #sol{
+    color: white;
+   
+    text-align: left;
+ }
+ #sag{
+    color: white;
+    text-align: right;
+ }
