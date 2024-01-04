@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tosun's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="kutu">
+    <div id="logo"> <a href=""><img src="res/pngegg.png" width="140" height="100"></a> </div>
+    <div id="menu">
+        <li> <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> LOKANTA</a></li>
+        <li> <a href="uyg.html"><i class="fa-sharp fa-solid fa-house"></i>UYG</a></li>
+        <li><a href="menü.html"><i class="fa-sharp fa-solid fa-bars"></i> MENÜ</a></li>
+        <li><a href="aşçı.html"><i class="fa-sharp fa-solid fa-user"></i> AŞÇILAR</a></li>
+    </div>
+    <div id="container">
+        <div class="kutu1">
+            <table>
+                <tr>
+                    <td>Adınız:</td>
+                    <td><input type="text" name="" id="ad"></td>
+                </tr>
+                <tr>
+                    <td>Soyadınız:</td>
+                    <td><input type="text" name="" id="soyad"></td>
+                </tr>
+            </table> 
+            <input onclick="karsilama()" type="button" id="btn" value="Karşıla">
+            <p id="metin"></p>
+        </div>        
+        <br>   
+        <p>ORTALAMA HESAPLAMA</p>
+        <div class="kutu2">
+            Not1:
+            <input type="text" name="" id="not1"> <br>
+            Not2:
+            <input type="text" name="" id="not2"> <br>
+            <input onclick="hesap()" type="button" value="Hesapla">
+            <p id="ortalama">Ortalama</p>
+            <p id="durum">Durum</p>
+        </div> 
+        <br>
+        <p>Dairenin Alan/Çevre Hesabı</p>
+        <div class="kutu3">            
+            Yarıçap:<input type="text" name="" id="d1">    
+            <input type="button" onclick="daire()" value="B U L">
+            <p id="cevre"></p>
+            <p id="alan"></p>
+        </div>
+        <br>
+        <p>EHLİYET KONTROL</p>
+        <div class="kutu4">
+            <p>Ehliyet</p>
+            Doğum Yılını Gir:<input type="text" name="" id="dYili" >
+            <input type="button" onclick="yasBul()" value="Yaş Bul">
+            <p id="yas"></p>
+            <p id="ehliyet"></p>
+        </div>
+        <br>
+        <p align="center">NET HESAPLAMA</p>
+        <div class="kutu5">            
+            <div class="net">
+                <p>Türkçe</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="turkceDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="turkceYanlis"> <br>
+                <input type="button" onclick="tnetHesapla()" value="Net Bul">
+                <p id="turkceNet">...</p>
+            </div>
+            <div class="net">
+                <p>Matematik</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="mDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="mYanlis"> <br>
+                <input type="button" onclick="mnetHesapla()" value="Net Bul">
+                <p id="matNet">...</p>
+            </div>
+            <div class="net">
+                <p>Sosyal</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="sDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="sYanlis"> <br>
+                <input type="button" onclick="snetHesapla()" value="Net Bul">
+                <p id="sosNet">...</p>
+            </div>
+            <div class="net">
+                <p>Fen</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="fDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="fYanlis"> <br>
+                <input type="button" onclick="fnetHesapla()" value="Net Bul">
+                <p id="fenNet">...</p>
+            </div>
+            
+        </div>
+        <p>Sınava Kalan Gün</p>
+        <div class="kutu6">
+            
+            <input type="button" onclick="tarihGetir()" value="Tarih Getir">
+            <p id="tarih"></p>
+        </div>
+        <p>Vücüt Kitle İndeksi</p>
+        <div class="kutu7">
+         Kilo:<input type="text"  id="Kilo"><br>
+         Boy:<input type="text"  id="Boy"><br>
+          <input type="button" onclick="indeks()" value="sonuç">
+          <p id="snc"></p>
+          <p id="vkidurum"></p>
+        </div>
+    </div>
+    
+    
+
+</div>
+
+   
+</body>
+
+</html>
